@@ -1,0 +1,69 @@
+[
+  {
+    "type": "info",
+    "name": "John Doe",
+    "table1": {
+      "class": "info-table1",
+      "label": ["Adres", "Telefon:", "E-posta:"],
+      "content": ["İzmit / Kocaeli", "555-123-4567", "example@gmail.com"]
+    },
+    "table2": {
+      "class": "info-table2",
+      "label": ["Website:", "Linkedin:"],
+      "content": ["https://github.com/", "https://www.linkedin.com/"]
+    }
+  },
+  {
+    "type": "single-block",
+    "title": "About",
+    "list": ["You can tell about yourself in this section"]
+  },
+  {
+    "type": "listing",
+    "title": "Experience",
+    "list": [
+      {
+        "date": "Date",
+        "location": "Name",
+        "position": "Position",
+        "description": "Description"
+      },
+      {
+        "date": "Date",
+        "location": "Name",
+        "position": "Position",
+        "description": "Description"
+      }
+    ]
+  },
+  {
+    "type": "listing",
+    "title": "Education",
+    "list": [
+      {
+        "date": "Date",
+        "location": "Name",
+        "position": "Position",
+        "description": "Description"
+      }
+    ]
+  },
+  {
+    "type": "three-column",
+    "title": "Skills",
+    "list": [
+      "Brewing",
+      "Recipe Inception",
+      "Barrel Aging",
+      "Beersmith",
+      "Fluent in French and English",
+      "Office Suite",
+      "Various Social Media Platforms"
+    ]
+  },
+  {
+    "type": "three-column",
+    "title": "Interests",
+    "list": ["Reading", "Music", "Cooking", "Writing", "Rock Climbing"]
+  }
+]
