@@ -70,7 +70,12 @@ section h5 {
 .custom-header {
   background-color: #f8f8ff;
   color: #000000;
-  transition: background-color 0.5s;
+  font-size: 20px;
+}
+
+.custom-header .container a:hover {
+  color: #2f86e1;
+  text-decoration: none;
 }
 
 button.nav-link {
@@ -257,6 +262,8 @@ button.nav-link.active {
 .custom-footer {
   background-color: #2b2b2b;
   color: #efefef;
+  height: auto;
+  font-size: 20px;
 }
 
 /* DELETABLE ITEMS AND DELETE BUTTON */
