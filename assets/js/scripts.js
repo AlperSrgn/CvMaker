@@ -17,9 +17,27 @@
   function setContent(cvContent) {
     let loadedCv = convertSavedData(cvContent);
     printable.html(loadedCv);
-    //Once CV is displayed, create buttons to add new elements and sortable functionality
+
+    // Once CV is displayed, create buttons to add new elements and sortable functionality
     createNewElementButton();
     makeSortable();
+
+    // Reset the uploaded image and file input
+    var img = document.querySelector("#cvImage");
+    var fileInput = document.querySelector("#imgUpload");
+    var uploadLabel = document.querySelector("#uploadLabel");
+    if (img) {
+      img.style.display = "none";
+      img.src = "";
+    }
+    if (fileInput) {
+      fileInput.style.display = "inline";
+      fileInput.value = "";
+    }
+    if (uploadLabel) {
+      uploadLabel.style.display = "inline";
+    }
+
     console.log("content updated");
   }
 

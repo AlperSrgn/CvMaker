@@ -92,11 +92,6 @@ button.nav-link.active {
   border-bottom: 1px solid #fff;
 }
 
-.cvForm {
-  display: flex;
-  justify-content: center;
-}
-
 /* PRINTABLE CONTENT STYLING*/
 
 #cv {
