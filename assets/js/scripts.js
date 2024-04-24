@@ -448,14 +448,29 @@ Default parameters are used when a new element is created*/
 
   //Print CV to a pdf file with html2pdf.js
   function toPDF() {
+    var img = document.querySelector("#cvImage");
+    var printable = document.querySelector("#printable");
+    var imgClone;
+    if (img.style.display !== "none") {
+      imgClone = img.cloneNode(true);
+      imgClone.id = "printableImage";
+      printable.insertBefore(imgClone, printable.firstChild);
+    }
+
     toggleUnprinted();
     makeAnchors("printable");
     html2pdf()
       .set(printOptions)
-      .from(printable[0])
+      .from(printable)
       .save()
-      .then(toggleUnprinted)
-      .then(makeSortable);
+      .then(function () {
+        if (img.style.display !== "none") {
+          var printableImage = document.querySelector("#printableImage");
+          printableImage.parentNode.removeChild(printableImage);
+        }
+        toggleUnprinted();
+        makeSortable();
+      });
   }
 
   $("#download-btn").click(toPDF);

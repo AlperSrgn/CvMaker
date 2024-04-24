@@ -64,6 +64,18 @@
 
     <div class="container main-container">
       <div id="cv">
+        <form id="cvForm">
+          <label for="imgUpload"></label><br />
+          <input
+            type="file"
+            id="imgUpload"
+            name="imgUpload"
+            accept="image/*"
+            onchange="showImage()"
+          /><br /><br />
+        </form>
+
+        <img id="cvImage" style="display: none; width: 200px; height: 200px" />
         <!-- PRINTABLE HTML-->
         <div id="printable" class="ml-auto mr-auto sortable-list"></div>
 
@@ -243,5 +255,26 @@
     <script src="assets/js/html2pdf.bundle.min.js"></script>
     <script src="assets/js/anchorme.min.js"></script>
     <script src="assets/js/scripts.js"></script>
+    <script>
+      function showImage() {
+        var file = document.querySelector("#imgUpload").files[0];
+        var reader = new FileReader();
+
+        reader.addEventListener(
+          "load",
+          function () {
+            document.querySelector("#cvImage").style.display = "block";
+            document.querySelector("#cvImage").src = reader.result;
+            document.querySelector("#imgUpload").style.display = "none";
+            document.querySelector("#uploadLabel").style.display = "none";
+          },
+          false
+        );
+
+        if (file) {
+          reader.readAsDataURL(file);
+        }
+      }
+    </script>
   </body>
 </html>
