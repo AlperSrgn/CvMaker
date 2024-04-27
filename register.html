@@ -1,62 +1,84 @@
 <html>
-
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Register</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/main.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
     <style>
-        body {
-            background-color: #2c7a89;
-        }
+      body {
+        background-color: #ebfcff;
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <div id="container-register">
-        <div id="title">
-            <i class="material-icons lock">lock</i> <b>Kayıt Ol</b>
+      <div id="title">
+        <i class="material-icons lock">lock</i> <b>Kayıt Ol</b>
+      </div>
+
+      <form>
+        <div class="input">
+          <div class="input-addon">
+            <i class="material-icons">email</i>
+          </div>
+          <input
+            id="email"
+            placeholder="Email"
+            type="email"
+            required
+            class="validate"
+            autocomplete="off"
+          />
         </div>
 
-        <form>
-            <div class="input">
-                <div class="input-addon">
-                    <i class="material-icons">email</i>
-                </div>
-                <input id="email" placeholder="Email" type="email" required class="validate" autocomplete="off">
-            </div>
+        <div class="clearfix"></div>
 
-            <div class="clearfix"></div>
-
-            <div class="input">
-                <div class="input-addon">
-                    <i class="material-icons">face</i>
-                </div>
-                <input id="username" placeholder="Kullanıcı Adı" type="text" required class="validate" autocomplete="off">
-            </div>
-
-            <div class="clearfix"></div>
-
-            <div class="input">
-                <div class="input-addon">
-                    <i class="material-icons">vpn_key</i>
-                </div>
-                <input id="password" placeholder="Şifre" type="password" required class="validate" autocomplete="off">
-            </div>
-
-            <div>
-                <span><br></span>
-            </div>
-
-            <input type="submit" value="Kayıt Ol" />
-        </form>
-
-        <div class="register">
-            <span style="color: #657575">Zaten bir hesabınız var mı?</span><br>
-            <a href="login.html"><button id="register-link">Giriş Yap</button></a>
+        <div class="input">
+          <div class="input-addon">
+            <i class="material-icons">vpn_key</i>
+          </div>
+          <input
+            id="password"
+            placeholder="Şifre"
+            type="password"
+            required
+            class="validate"
+            autocomplete="off"
+          />
         </div>
+
+        <div class="clearfix"></div>
+
+        <div class="input">
+          <div class="input-addon">
+            <i class="material-icons">vpn_key</i>
+          </div>
+          <input
+            id="password"
+            placeholder="Şifre"
+            type="password"
+            required
+            class="validate"
+            autocomplete="off"
+          />
+        </div>
+
+        <div>
+          <span><br /></span>
+        </div>
+
+        <input type="submit" value="Kayıt Ol" />
+      </form>
+
+      <div class="register">
+        <span style="color: #657575">Zaten bir hesabınız var mı?</span><br />
+        <a href="login.html"><button id="register-link">Giriş Yap</button></a>
+      </div>
     </div>
-</body>
-
+  </body>
 </html>
