@@ -2,7 +2,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Login</title>
+    <title>Register</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/main.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -14,12 +14,21 @@
 </head>
 
 <body>
-    <div id="container-login">
+    <div id="container-register">
         <div id="title">
-            <i class="material-icons lock">lock</i> <b>Giriş Yap</b>
+            <i class="material-icons lock">lock</i> <b>Kayıt Ol</b>
         </div>
 
         <form>
+            <div class="input">
+                <div class="input-addon">
+                    <i class="material-icons">email</i>
+                </div>
+                <input id="email" placeholder="Email" type="email" required class="validate" autocomplete="off">
+            </div>
+
+            <div class="clearfix"></div>
+
             <div class="input">
                 <div class="input-addon">
                     <i class="material-icons">face</i>
@@ -36,20 +45,16 @@
                 <input id="password" placeholder="Şifre" type="password" required class="validate" autocomplete="off">
             </div>
 
-            <div class="remember-me">
-                <input type="checkbox">
-                <span style="color: #757575">Beni Hatırla</span>
+            <div>
+                <span><br></span>
             </div>
 
-            <input type="submit" value="Giriş Yap" />
+            <input type="submit" value="Kayıt Ol" />
         </form>
 
-        <div class="forgot-password">
-            <a href="#">Şifreni mi Unuttun?</a>
-        </div>
         <div class="register">
-            <span style="color: #657575">Henüz hesap oluşturmadın mı?</span><br>
-            <a href="register.html"><button id="register-link">Kayıt Ol</button></a>
+            <span style="color: #657575">Zaten bir hesabınız var mı?</span><br>
+            <a href="login.html"><button id="register-link">Giriş Yap</button></a>
         </div>
     </div>
 </body>
