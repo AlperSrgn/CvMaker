@@ -5,7 +5,7 @@ body {
 }
 
 a {
-  color: #000;
+  color: #ffffff;
 }
 
 .container {
@@ -68,7 +68,7 @@ section h5 {
 }
 
 .custom-header {
-  background-color: #f8f8ff;
+  background-color: #000126;
   color: #000000;
   font-size: 20px;
 }
