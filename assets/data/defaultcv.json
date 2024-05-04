@@ -1,11 +1,11 @@
 [
   {
     "type": "info",
-    "name": "John Doe",
+    "name": "Name",
     "table1": {
       "class": "info-table1",
-      "label": ["Adres", "Telefon:", "E-posta:"],
-      "content": ["İzmit / Kocaeli", "555-123-4567", "example@gmail.com"]
+      "label": ["Address:", "Phone:", "Email:"],
+      "content": ["İzmit / Kocaeli", "0545 987 6554", "example@gmail.com"]
     },
     "table2": {
       "class": "info-table2",
@@ -50,20 +50,26 @@
   },
   {
     "type": "three-column",
-    "title": "Skills",
+    "title": "Skills & Competencies",
     "list": [
-      "Brewing",
-      "Recipe Inception",
-      "Barrel Aging",
-      "Beersmith",
-      "Fluent in French and English",
-      "Office Suite",
-      "Various Social Media Platforms"
+      "Java",
+      "MS Office Programs",
+      "SQL",
+      "Python",
+      "Project Management",
+      "HTML/CSS",
+      "Reporting"
     ]
   },
   {
     "type": "three-column",
     "title": "Interests",
-    "list": ["Reading", "Music", "Cooking", "Writing", "Rock Climbing"]
+    "list": [
+      "Swimming",
+      "Reading",
+      "Cooking",
+      "Writing",
+      "Coding or programming"
+    ]
   }
 ]

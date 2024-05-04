@@ -8,6 +8,10 @@ a {
   color: #ffffff;
 }
 
+.row a {
+  color: #000;
+}
+
 .container {
   width: 80%;
 }
